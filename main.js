@@ -12,16 +12,21 @@ const paragraphs = document.getElementsByTagName('p')
 // }
 formEl.style.justifyContent = 'space-evenly'
 formEl.style.paddingTop = '30px';
-formEl.style.marginBottom = '20px';
+formEl.style.paddingBottom = '20px';
+formEl.style.backgroundColor = 'pink'
+formEl.style.borderRadius = '15px'
+formEl.style.borderRaduis = '15px'
 
 toDoEl.style.display = 'flex';
 toDoEl.style.gap = '30px';
 toDoEl.style.borderRadius = '20px';
-toDoEl.style.border = '2px solid lightgrey';
-toDoEl.style.boxShadow = '0 5 5 darkgrey';
-toDoEl.style.visibility = 'hidden';
+toDoEl.style.border = '2px solid black';
+toDoEl.style.boxShadow = 'inset -5px -10px 10px 1px rgba(0,0,0,.2), inset 5px 10px 5px 1px rgba(0,0,0,.2)';
+// toDoEl.style.visibility = 'hidden';
 toDoEl.style.padding = '20px';
 toDoEl.style.flexWrap = 'wrap';
+toDoEl.style.backgroundColor = 'rgba(0,172,193,1)'
+toDoEl.style.marginBottom = '20px'
 // toDoEl.style.justifyContent = 'space-evenly';
 
 function addToDoItem(toDoText, toDoDate) {
@@ -61,4 +66,3 @@ clearBtn.addEventListener('click', (e) => {
     toDoEl.innerHTML = ''
 
 })
-
